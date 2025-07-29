@@ -1,6 +1,6 @@
 
 def trice(num):
-    return num *3
+    return num >3
 # lambda: creates a small anonymous function
 # Syntax: lambda arguments: expression
 square = lambda x: x ** 2

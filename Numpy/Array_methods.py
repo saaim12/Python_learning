@@ -7,10 +7,10 @@ print('array using arange:',arange_arr)
 print('array using randint: ',randint_arr)
 #This method returns an array containing the same data as is passed to it but with a new shape.
 print("----------- first method --------")
+# compulsry: rows × columns = total elements in the array
 print(arange_arr.reshape(3,3))
 print("---------- second method --------")
 array_randint = np.random.randint(0,100,10) # using randint()
-
 print( array_randint )
 
 print("Maximum : ",array_randint.max())

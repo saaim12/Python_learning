@@ -16,7 +16,7 @@ print("Nested dictionary : {}".format(nested_d['k1']))
 # Printing value from nested dictionary
 print("Value from nested dictionary : {}".format(nested_d['k1']['k_in'][2]))
 #methods of dict
- # We have a dictionary
+# We have a dictionary
 d1 = {'key1':'value1','key2':'value2', 'key3':'value3'}
 # Grabbing all the keys.
 print("Keys of dictionary : {}".format(d1.keys())) #try "list(d1.keys())"

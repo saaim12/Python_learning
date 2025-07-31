@@ -19,7 +19,7 @@ print("------------------- 2nd Method ---------------")
 
 # 2: The linspace() method returns evenly spaced numbers over a specified interval.
 # start from 1 & end at 15 with 10 evenly spaced points b/w 1 to 15.
-print( np.linspace(1, 15, 15,dtype=int) )
+print( np.linspace(1, 15, 150,dtype=int) )
 
 # Let's find the step size with "retstep" which returns the array and the step size
 #retstep=True tells NumPy to also return the spacing (step size) between values.

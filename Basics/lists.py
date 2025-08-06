@@ -1,6 +1,6 @@
 #list like array in other languages
 my_list=[1,2,3,4]
-print(my_list)
+print(len(my_list))
 list_of_string = ['d','e','f']
 print(f"list of chars ={list_of_string}")
 # grab the first item in the list

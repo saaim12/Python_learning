@@ -14,7 +14,6 @@ print(pd.Series(data = my_data))
 print(pd.Series(data=my_data,index=my_labels))
 
 #same we can do with numpy arrays
-
 arr=np.arange(1,3)
 print(pd.Series(arr,["a","b"]))
 my_dict = {'x':100,'y':200,'z':300}
@@ -49,6 +48,7 @@ print(ser3)
 print("_______________ methods _____________")
 #The isnull() method in Series is used to detect missing data.
 print(ser3.isnull())
+print(ser3.notnull)
 print("Head : \n",ser1.head(2)) # head(1) will return the first row only
 print("Tail : \n",ser1.tail(1)) # tail(1) will return the last row only
 print("\n it will return the indexes values")

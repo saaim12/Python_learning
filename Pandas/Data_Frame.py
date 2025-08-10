@@ -4,11 +4,12 @@ import pandas as pd
 
 columns="c1 c2 c3 c4 c5 c6 c7 c8 c9 c10".split()
 rows="r1 r2 r3 r4 r5 r6 r7 r8 r9 r10".split()
+
 data=np.arange(0,100).reshape(10,10)
 
 df=pd.DataFrame(data=data,index=rows,columns=columns)
 print(df)
-#grabing columns it dont work with rows to access rows we use loc func
+#grabing columns it don't work with rows to access rows we use loc func
 print(df["c1"])
 print(df[["c1","c10"]])
 print(df.c1,df.c2)
@@ -45,7 +46,7 @@ print(df!=99)
 bool_mask=df % 2==0
 print(bool_mask)
 df2=df[bool_mask]
-print(df2)
+print("df is ",df2)
 print(df[['c7']] > 11)
 # We need two rows, pass in a list of those rows
 print("Rows \n",df[df['c6']>11].loc[['r3','r5']])
@@ -63,8 +64,8 @@ print("New column added \n ",df)
 df.set_index('newind', inplace = True)
 print("Inplaced newint \n", df)
 
-print("First 2 Rows \n ", df.head(n=2)) # n=5 by default
-print("Last 2 Rows \n", df.tail(n=2)) # n=2 by default
+print("First 2 Rows \n ", df.head()) # n=5 by default
+print("Last 2 Rows \n", df.tail()) # n=2 by default
 
 print("Dataframe info \n", df.info())
 
